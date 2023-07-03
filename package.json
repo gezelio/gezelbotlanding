@@ -2,10 +2,13 @@
 	"name": "gezelbotlanding",
 	"version": "0.0.0",
 	"type": "module",
+	"engines": {
+		"npm": ">=18.x"
+	},
 	"scripts": {
 		"preview": "vite preview",
 		"lint": "eslint --max-warnings 0 --fix . && svelte-check",
-		"build": "vite build",
+		"build": "npm install --legacy-peer-deps && vite build",
 		"dev": "vite dev"
 	},
 	"dependencies": {
